@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# 🏡 Full-Stack Real Estate App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-stack Real Estate app built from scratch using **React Native, React.js, Expo, Google Authentication, and Appwrite**. This app features **dynamic routing, authentication, and a modern UI** powered by **Tailwind CSS** and **NativeWind** This is my first mobile app.
 
-## Get started
+## 🚀 Features
+- 🔑 **Google Authentication** (Secure login with Firebase/Auth)
+- 📍 **Dynamic Routing** using **expo-router**
+- 📦 **Appwrite Database** for managing listings & user data
+- 🎨 **Tailwind CSS** & **NativeWind** for modern UI styling
+- 📱 **Cross-platform support** (iOS, Android, Web via Expo)
 
-1. Install dependencies
+## 🛠️ Technologies Used
+- **React Native** (for mobile UI)
+- **React.js** (for web-based components)
+- **Expo** (for development & deployment)
+- **Google Authentication** (OAuth integration)
+- **Tailwind CSS + NativeWind** (styling)
+- **Appwrite** (backend, database, and authentication)
+- **Expo Router** (dynamic navigation)
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## 📂 Project Structure
+```sh
+📦 real-estate-app
+├── 📂 app          # Expo Router pages
+├── 📂 components   # Reusable UI components
+├── 📂 config       # Configuration files (Auth, API, etc.)
+├── 📂 constants    # Configuration data
+├── 📂 lib          # Integration with appwrite
+├── 📂 assets       # Images, icons, etc.
+├── package.json    # Dependencies
+└── README.md       # Project documentation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔧 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Abhishek-Bharti1/expo-restate-app.git
+   cd real-estate-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up Appwrite & Google Authentication (Add API keys in `.env` file):
+   ```env
+ EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+ EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+ EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+ EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+ EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+ EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+ EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID
+   ```
+4. Run the app:
+   ```sh
+   expo start
+   ```
 
-## Learn more
+## 🚀 Deployment
+To deploy the app using Expo Application Services (EAS):
+```sh
+eas build -p android  # For Android
+eas build -p ios      # For iOS
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 💡 Contributing
+Feel free to contribute by opening issues or submitting PRs. Let's build something amazing together! 🚀
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
